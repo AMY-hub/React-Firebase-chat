@@ -19,8 +19,7 @@ const Chat = () => {
     const sendMessage = async (e) => {
         e.preventDefault();
         const time = firebase.firestore.FieldValue.serverTimestamp();
-       
-        console.log(time);
+    
         firestore.collection('messages').add({
             uid: user.uid,
             displayName: user.displayName,

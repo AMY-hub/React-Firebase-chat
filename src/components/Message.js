@@ -35,6 +35,7 @@ const Message = (props) => {
     <span className="be-comment-text "
                 style={{
                     marginLeft: props.userId === props.data.uid ? 'auto' : '10px', 
+                    marginRight: props.userId === props.data.uid ? '10px' : 'auto',
                 }}
     >
         {props.data.text}
